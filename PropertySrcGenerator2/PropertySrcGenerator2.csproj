@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<!--<IncludeBuildOutput>false</IncludeBuildOutput>-->
+		<LangVersion>10.0</LangVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Include="..\PropertySrcGenerator\IndentText.cs" Link="IndentText.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.3" />
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.1.0" />
+	</ItemGroup>
+
+</Project>
